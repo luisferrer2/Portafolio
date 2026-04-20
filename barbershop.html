@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kings Cut | Premium Barbershop</title>
+  <link rel="stylesheet" href="barbershop.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <button class="toast-close" id="toastClose">✕</button>
+  <div class="toast-title">Appointment Confirmed ✓</div>
+  <div class="toast-msg" id="toastMsg"></div>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="logo">Kings Cut</div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#booking">Booking</a></li>
+  </ul>
+  <button class="nav-btn" id="navBookBtn">Book Now</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="barber-pole"></div>
+  <div class="hero-content">
+    <p class="hero-tag">Est. 2018 · Premium Barbershop</p>
+    <h1>
+      The Art of
+      <em>The Cut</em>
+    </h1>
+    <p>Where tradition meets precision. We don't just cut hair — we craft your identity. Walk in, walk out a king.</p>
+    <div class="hero-btns">
+      <a href="#booking" class="btn-gold">📅 Book Appointment</a>
+      <a href="#services" class="btn-ghost">✂️ View Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats reveal">
+  <div class="stat">
+    <div class="stat-num">6+</div>
+    <div class="stat-label">Years Open</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">3K+</div>
+    <div class="stat-label">Happy Clients</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">5★</div>
+    <div class="stat-label">Average Rating</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">4</div>
+    <div class="stat-label">Master Barbers</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="section-header reveal">
+    <p class="section-tag">What we offer</p>
+    <h2 class="section-title">Our <em>Services</em></h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">✂️</div>
+      <div class="service-name">Classic Cut</div>
+      <p class="service-desc">Timeless scissor or clipper cut tailored to your face shape and personal style.</p>
+      <div class="service-price">$25 <span>/ session</span></div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🪒</div>
+      <div class="service-name">Straight Razor Shave</div>
+      <p class="service-desc">Hot towel treatment followed by a close traditional straight-razor shave.</p>
+      <div class="service-price">$30 <span>/ session</span></div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">👑</div>
+      <div class="service-name">The King Package</div>
+      <p class="service-desc">Full cut, beard trim, straight shave, scalp massage & hot towel. The full experience.</p>
+      <div class="service-price">$60 <span>/ session</span></div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🧔</div>
+      <div class="service-name">Beard Sculpt</div>
+      <p class="service-desc">Precision beard shaping and grooming with premium products to define your look.</p>
+      <div class="service-price">$20 <span>/ session</span></div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🎨</div>
+      <div class="service-name">Hair Color</div>
+      <p class="service-desc">Professional coloring, highlights or fade effects with top-quality pigments.</p>
+      <div class="service-price">$45 <span>/ session</span></div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">👦</div>
+      <div class="service-name">Kids Cut</div>
+      <p class="service-desc">Gentle, patient service for boys under 12. Make them look sharp too.</p>
+      <div class="service-price">$18 <span>/ session</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="booking-section">
+  <div class="booking-inner">
+    <div class="booking-text reveal">
+      <p class="section-tag">Reserve your spot</p>
+      <h2>Book Your <em>Appointment</em></h2>
+      <p>Select your service, pick your barber and choose a time. We'll confirm within minutes.</p>
+      <div class="booking-meta">
+        <div class="booking-meta-item">
+          <div class="meta-icon">🕐</div>
+          Mon–Sat: 9:00 AM – 8:00 PM
+        </div>
+        <div class="booking-meta-item">
+          <div class="meta-icon">📍</div>
+          123 Main Street, Downtown
+        </div>
+        <div class="booking-meta-item">
+          <div class="meta-icon">📞</div>
+          +1 555 000 0000
+        </div>
+        <div class="booking-meta-item">
+          <div class="meta-icon">⏱</div>
+          Sessions from 30 to 90 minutes
+        </div>
+      </div>
+    </div>
+
+    <div class="booking-form reveal">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="fname" placeholder="John Smith">
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" id="fphone" placeholder="+1 555 0000">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Service</label>
+          <div class="select-wrap">
+            <select id="fservice">
+              <option value="">Select a service</option>
+              <option>Classic Cut — $25</option>
+              <option>Straight Razor Shave — $30</option>
+              <option>The King Package — $60</option>
+              <option>Beard Sculpt — $20</option>
+              <option>Hair Color — $45</option>
+              <option>Kids Cut — $18</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Barber</label>
+          <div class="select-wrap">
+            <select id="fbarber">
+              <option>Any Available</option>
+              <option>Marcus Reid — Senior</option>
+              <option>Diego Vargas — Expert</option>
+              <option>James Cole — Classic</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Date</label>
+          <input type="date" id="fdate">
+        </div>
+        <div class="form-group">
+          <label>Time</label>
+          <div class="select-wrap">
+            <select id="ftime">
+              <option>9:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>12:00 PM</option>
+              <option>2:00 PM</option>
+              <option>3:00 PM</option>
+              <option>4:00 PM</option>
+              <option>5:00 PM</option>
+              <option>6:00 PM</option>
+              <option>7:00 PM</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button class="btn-gold btn-full" id="confirmBtn">
+        📅 Confirm Booking
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="section">
+  <div class="section-header reveal">
+    <p class="section-tag">The crew</p>
+    <h2 class="section-title">Meet the <em>Barbers</em></h2>
+  </div>
+  <div class="team-grid">
+    <div class="barber-card reveal">
+      <div class="barber-photo marcus">💈</div>
+      <div class="barber-info">
+        <div class="barber-name">Marcus Reid</div>
+        <div class="barber-role">Senior Barber · 10 yrs</div>
+        <div class="barber-spec">Specialist in classic cuts, tapers and vintage barbering. Known for his razor-sharp fades.</div>
+      </div>
+    </div>
+    <div class="barber-card reveal">
+      <div class="barber-photo diego">✂️</div>
+      <div class="barber-info">
+        <div class="barber-name">Diego Vargas</div>
+        <div class="barber-role">Expert Barber · 7 yrs</div>
+        <div class="barber-spec">Masters in textured hair, curls and modern styles. Your go-to for bold transformations.</div>
+      </div>
+    </div>
+    <div class="barber-card reveal">
+      <div class="barber-photo james">🪒</div>
+      <div class="barber-info">
+        <div class="barber-name">James Cole</div>
+        <div class="barber-role">Classic Specialist · 5 yrs</div>
+        <div class="barber-spec">Straight razor authority. Delivers old-school precision with a modern sensibility.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-header reveal">
+    <p class="section-tag">Client voices</p>
+    <h2 class="section-title">What They <em>Say</em></h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial reveal">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">Marcus is a true artist. Best fade I've had in years. The King Package is absolutely worth every dollar.</p>
+      <div class="testimonial-author">— Alex M., Regular Client</div>
+    </div>
+    <div class="testimonial reveal">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">Walked in feeling rough, walked out feeling like royalty. The atmosphere, the service, everything is premium.</p>
+      <div class="testimonial-author">— Ryan T., New Client</div>
+    </div>
+    <div class="testimonial reveal">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">Diego shaped my beard better than I ever could myself. I've been coming here every two weeks for a year.</p>
+      <div class="testimonial-author">— Carlos R., Loyal Client</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Kings Cut</div>
+  <div class="footer-info">
+    123 Main Street · Open Mon–Sat 9am–8pm<br>
+    <a href="tel:+15550000">+1 555 000 0000</a> · <a href="mailto:hello@kingscut.com">hello@kingscut.com</a>
+  </div>
+  <div class="footer-copy">© 2025 Kings Cut. All rights reserved.</div>
+</footer>
+
+<script src="barbershop.js"></script>
+</body>
+</html>
